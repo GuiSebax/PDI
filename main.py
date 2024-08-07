@@ -37,7 +37,7 @@ def high_boost_filter(image, k, kernel_size=5):
     return high_boost
 
 # Exemplo de uso
-image_path = 'caminho/para/imagem.png'
+image_path = 'Fig0340(a)(dipxe_text).tif'
 image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
 # Solicita ao usuário o valor de k
@@ -46,7 +46,7 @@ k = float(input("Digite o valor de k para a filtragem high-boost: "))
 # Aplica a filtragem high-boost com o valor de k fornecido pelo usuário
 filtered_image = high_boost_filter(image, k)
 
-result_path = 'caminho/para/imagem_high_boost.png'
+result_path = 'Imagem2.png'
 cv2.imwrite(result_path, filtered_image)
 
 print(f"Imagem processada e salva em {result_path}")
