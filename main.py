@@ -10,7 +10,13 @@ def apply_low_pass_filter(image, kernel_size):
     Returns:
         np.ndarray: Imagem suavizada.
     """
-    return cv2.blur(image, (kernel_size, kernel_size))
+    
+    # Criação da máscara da média
+    kernel = np.ones((kernel_size, kernel_size), np.float32) / (kernel_size ** 2)
+    
+    # Convolução da máscara na imagem 2D
+    return cv2.filter2D(image, -1, kernel)
+    
 
 def high_boost_filter(image, k, kernel_size=5):
     """
