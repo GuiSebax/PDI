@@ -6,9 +6,9 @@ Dentro deste repositório possui 2 trabalhos que foram desenvolvidos durante a m
 
 O Objetivo do primeiro trabalho é implementar a geração de imagens coloridas que sejam "fatias" do cubo que representa o espaço de cor RGB, feito da seguinte forma:
 
-    - a face escolhida à partir da qual será selecionada a "fatia" (a face deve ser indexada/rotulada por um valor de 1 a 6)
+- a face escolhida à partir da qual será selecionada a "fatia" (a face deve ser indexada/rotulada por um valor de 1 a 6)
 
-    - um valor i (de 0 a 255) para indexar a i-ésima fatia.
+- um valor i (de 0 a 255) para indexar a i-ésima fatia.
 
 O programa gera e mostra a i-ésima "fatia" em relação à face escolhida como referência. Considere que o cubo RGB tem profundidade de 24 bits.
 
